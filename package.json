@@ -1,0 +1,27 @@
+{
+  "name": "Testiranje",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --timeout 60000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aleksandra1701/Testiranje.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aleksandra1701/Testiranje/issues"
+  },
+  "homepage": "https://github.com/Aleksandra1701/Testiranje#readme",
+  "dependencies": {
+    "chai": "^4.3.7",
+    "chai-as-promised": "^7.1.1",
+    "chromedriver": "^108.0.0",
+    "mocha": "^10.1.0",
+    "selenium-webdriver": "^4.7.0"
+  }
+}
