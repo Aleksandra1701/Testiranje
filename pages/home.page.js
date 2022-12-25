@@ -57,11 +57,16 @@ module.exports = class HomePage {
             return packageDiv.findElement(By.name('quantity'))
           }
           getQuantityOptions(QuantityDropdown) {
-            return QuantityDropdown.findElement(By.css('option'));
+            return QuantityDropdown.findElements(By.css('option'));
 
           }
           getOrderButton(packageDiv) {
             return packageDiv.findElement(By.className('btn btn-primary'));
 
           }
-} 
+
+          async clickOnViewShoppingCartLink() {
+            const linkShoppingCart = await this.#driver.findElement(By.partialLinkText('shopping cart'));
+            await linkShoppingCart.click();
+        }
+    }
